@@ -1,0 +1,7 @@
+[package]
+name = "sorters"
+version = "0.1.0"
+authors = ["a_kapustin <a.kapustin@spbu.ru>"]
+
+[dependencies]
+rand = "*"

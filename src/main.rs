@@ -107,14 +107,14 @@ fn merge_sort(v: &mut Vec<u32>) {
 }
 
 
-struct Node<T> where T: Ord {
+struct Node<T> where T: Ord + Clone {
     val: T,
     count: usize,
     left: Option<Box<Node<T>>>,
     right: Option<Box<Node<T>>>,
 }
 
-impl <T> Node<T>  where T: Ord + Clone {
+impl <T> Node<T> where T: Ord + Clone{
 
     fn new(new_val: T) -> Node<T> {
         Node {
